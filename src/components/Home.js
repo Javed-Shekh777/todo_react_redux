@@ -13,6 +13,10 @@ const Home = () => {
 
 
   const addData = () => {
+    if(!data) {
+      alert('Please Enter any content before Add');
+      return;
+    }
     dispatch(Add(data));
     setData("");
   }
